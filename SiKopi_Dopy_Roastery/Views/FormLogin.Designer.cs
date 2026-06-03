@@ -28,12 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormLogin";
+            Btn_Masuk = new Button();
+            label_username = new Label();
+            txtbox_username = new TextBox();
+            SuspendLayout();
+            // 
+            // Btn_Masuk
+            // 
+            Btn_Masuk.Location = new Point(577, 336);
+            Btn_Masuk.Name = "Btn_Masuk";
+            Btn_Masuk.Size = new Size(163, 34);
+            Btn_Masuk.TabIndex = 0;
+            Btn_Masuk.Text = "Masuk";
+            Btn_Masuk.UseVisualStyleBackColor = true;
+            // 
+            // label_username
+            // 
+            label_username.AutoSize = true;
+            label_username.Location = new Point(445, 101);
+            label_username.Name = "label_username";
+            label_username.Size = new Size(91, 25);
+            label_username.TabIndex = 1;
+            label_username.Text = "Username";
+            // 
+            // txtbox_username
+            // 
+            txtbox_username.Location = new Point(445, 129);
+            txtbox_username.Name = "txtbox_username";
+            txtbox_username.Size = new Size(390, 31);
+            txtbox_username.TabIndex = 2;
+            txtbox_username.TextChanged += textBox1_TextChanged;
+            // 
+            // FormLogin
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1284, 450);
+            Controls.Add(txtbox_username);
+            Controls.Add(label_username);
+            Controls.Add(Btn_Masuk);
+            Name = "FormLogin";
+            Text = "FormLogin";
+            Load += FormLogin_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button Btn_Masuk;
+        private Label label_username;
+        private TextBox txtbox_username;
     }
 }
