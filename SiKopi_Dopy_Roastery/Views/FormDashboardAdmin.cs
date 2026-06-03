@@ -6,13 +6,18 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SiKopi_Dopy_Roastery
+namespace SiKopi_Dopy_Roastery.Views
 {
-    public partial class FormLogin : Form
+    public partial class FormDashboardAdmin : Form
     {
-        public FormLogin()
+        public FormDashboardAdmin()
         {
             InitializeComponent();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
